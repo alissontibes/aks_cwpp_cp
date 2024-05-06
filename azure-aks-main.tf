@@ -10,7 +10,7 @@ resource "azurerm_kubernetes_cluster" "aks-cluster" {
     dns_prefix          = var.k8s-cluster-name
     
     default_node_pool {
-      name            = "ckpnodepool"
+      name            = "checkpointnodepool"
       node_count      = var.node-pool-count
       vm_size         = "Standard_D2_v3"
     }

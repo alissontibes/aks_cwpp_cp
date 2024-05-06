@@ -1,5 +1,3 @@
-# Create a dedicated Org-unit under the root one
-
 resource "dome9_cloudaccount_kubernetes" "cspm-cluster" {
   name = var.k8s-cluster-name
   organizational_unit_id = var.cspm-org-unit-id

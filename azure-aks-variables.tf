@@ -7,15 +7,15 @@ variable "node-pool-count" {
     default = 2
 }
 variable "location" {
-    type = string #eastus
+    type = string #eastus #you choose what fits most 
 }
 
 variable "cspm-key-id" {
-    description = "Insert the API KEY ID"
+    description = "Insert the API KEY ID from Check Point Infinity"
     type = string
 }
 variable "cspm-key-secret" {
-    description = "Insert the API KEY Secret"
+    description = "Insert the API KEY Secret from Check Point Infinity"
     type = string
 }
 variable "cspm-api-endpoint" {
@@ -23,12 +23,12 @@ variable "cspm-api-endpoint" {
     default = "https://api.dome9.com/v2/"
 }
 variable "cspm-org-unit-id" {
-    description = "Insert the name of your Organizational Unit"
+    description = "Insert the Organizational Unit ID"
     type = string
 }
 
 variable "cspm-residency" {
-    description = "CSPM Portal Region - usea1 [default], euwe1, apso1"
+    description = "Infinity Portal Region - usea1 [default], euwe1, apso1"
     type = string
     default = "usea1"
 }
