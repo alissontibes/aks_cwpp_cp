@@ -1,6 +1,5 @@
 variable "k8s-cluster-name" {
     description = "the name of your AKS cluster"
-    default = "aks-cloudguard"
     type = string
 }
 variable "node-pool-count" {
